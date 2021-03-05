@@ -1,0 +1,17 @@
+<div [ngClass]="isBlack? 'black' : 'green'">
+    Parent Component
+</div>
+<div>
+    from another child {{message}}
+</div>
+
+<app-child [childMessage]="parentMessage"></app-child>
+
+<app-another-child></app-another-child>
+<app-toggle-colour-child  (messageEvent)="toggleColour($event)"></app-toggle-colour-child>
+
+<h2>
+{{serviceMessage}} on Parent
+</h2>
+
+<app-sibling></app-sibling>

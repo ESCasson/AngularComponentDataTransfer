@@ -1,0 +1,13 @@
+<h2>{{article.title}}</h2>
+
+    <p>
+        {{article.description}}
+    </p>
+    <a href="{{article.url}}">Read full article</a>
+    <button (click)='sendArticle()'>
+        Make this the selected Article
+    </button>
+
+    <button (click)='navigateToFullNews()'>
+        Navigate to Full News Component
+    </button>
